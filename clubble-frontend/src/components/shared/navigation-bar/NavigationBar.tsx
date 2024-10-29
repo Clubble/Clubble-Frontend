@@ -8,7 +8,7 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../contexts/auth-context-provider";
 import { BASE_PATH, ENTRA_SCOPE } from "../../../constants/api.constants";
 import { CurrentUserContext } from "../../../contexts/current-user-context";
-import HttpVerb from "../../../../../clubble-api/src/enums/http-verb.enum";
+import HttpVerb from "../../../enums/http-verb.enum";
 import { sleep } from "../../../helpers/timeout.helpers";
 
 const NavigationBar = () => {

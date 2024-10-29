@@ -7,7 +7,7 @@ const TabsUnit = (props: any) => {
 
 	const [currentTabValue, setCurrentTabValue] = useState(0);
 
-	const handleTabChange = (event: SyntheticEvent, newValue: number) => {
+	const handleTabChange = (_event: SyntheticEvent, newValue: number) => {
 		setCurrentTabValue(newValue);
 	};
 	return (

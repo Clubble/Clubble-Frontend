@@ -30,7 +30,7 @@ const user: CurrentUser = {
 
 export const CurrentUserContext = createContext({
 	user,
-	setUser: (updatedUser: CurrentUser): void => {}
+	setUser: (_updatedUser: CurrentUser): void => {}
 });
 
 const CurrentUserContextProvider = ({ children }: CurrentUserProviderProps) => {

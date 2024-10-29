@@ -2,14 +2,15 @@ import { InteractionRequiredAuthError } from "@azure/msal-browser";
 import { createContext, ReactNode } from "react";
 import { useMsal } from "@azure/msal-react";
 import axios from "axios";
-import HttpVerb from "../../../clubble-api/src/enums/http-verb.enum";
+import HttpVerb from "../enums/http-verb.enum";
+
 
 export const AuthContext = createContext({
 	verifyToken: (
-		scope: string,
-		endpoint: string,
-		requestType: HttpVerb,
-		body: any
+		_scope: string,
+		_endpoint: string,
+		_requestType: HttpVerb,
+		_body: any
 	): any => {}
 });
 

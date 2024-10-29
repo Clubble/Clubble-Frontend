@@ -17,10 +17,10 @@ import {
 	Typography
 } from "@mui/material";
 import { grey } from "@mui/material/colors";
-import { useContext, useEffect, useState } from "react";
-import { AuthContext } from "../../../contexts/auth-context-provider";
-import { BASE_PATH, ENTRA_SCOPE } from "../../../constants/api.constants";
-import HttpVerb from "../../../../../clubble-api/src/enums/http-verb.enum";
+import { useState } from "react";
+// import { AuthContext } from "../../../contexts/auth-context-provider";
+// import { BASE_PATH, ENTRA_SCOPE } from "../../../constants/api.constants";
+// import HttpVerb from "../../../../../clubble-api/src/enums/http-verb.enum";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
 	[`&.${tableCellClasses.head}`]: {
@@ -32,7 +32,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
 	}
 }));
 
-const StyledTableRow = styled(TableRow)(({ theme }) => ({
+const StyledTableRow = styled(TableRow)(() => ({
 	"&:nth-of-type(odd)": {
 		backgroundColor: grey[300]
 	},
@@ -49,7 +49,7 @@ const ClubMembers = ({
 	members: any;
 	setClubMembers: Function;
 }) => {
-	const authCtx = useContext(AuthContext);
+	// const authCtx = useContext(AuthContext);
 
 	const MemberPaidStatus = ({
 		id,
@@ -73,13 +73,13 @@ const ClubMembers = ({
 			setIsList(false);
 		};
 
-		const patchMember = async (status: string) => {
-			const response = await authCtx.verifyToken(
-				ENTRA_SCOPE,
-				`${BASE_PATH}/club-member/${id}`,
-				HttpVerb.PATCH,
-				{ hasPaid: status === "Yes" ? true : false }
-			);
+		const patchMember = async (_status: string) => {
+			// const response = await authCtx.verifyToken(
+			// 	ENTRA_SCOPE,
+			// 	`${BASE_PATH}/club-member/${id}`,
+			// 	HttpVerb.PATCH,
+			// 	{ hasPaid: status === "Yes" ? true : false }
+			// );
 		};
 
 		return isList ? (

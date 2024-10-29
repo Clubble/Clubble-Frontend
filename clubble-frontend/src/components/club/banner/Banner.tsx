@@ -1,5 +1,5 @@
-import { Box, Button } from "@mui/material";
-import EditIcon from "@mui/icons-material/Edit";
+import { Box } from "@mui/material";
+// import EditIcon from "@mui/icons-material/Edit";
 import { styles } from "./styles";
 import ClubTitle from "../title/ClubTitle";
 

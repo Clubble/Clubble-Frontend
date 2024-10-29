@@ -3,7 +3,7 @@ import {
 	UnauthenticatedTemplate,
 	useMsal
 } from "@azure/msal-react";
-import { login, logout } from "../../iam/authService";
+import { login } from "../../iam/authService";
 import { Box, Button, Container, Typography } from "@mui/material";
 import bg from "../../assets/images/cody-scott-milewski-HwpOAJfN8mM-unsplash.jpg";
 import { Navigate } from "react-router-dom";

@@ -1,25 +1,25 @@
 import { Avatar, Box, Container, Divider, Typography } from "@mui/material";
 import { styles } from ".././userProfile/styles";
 import TabsUnit from "../../components/shared/tab/TabsUnit";
-import userProfileImg from "../../assets/images/user-profile-img.jpg";
-import TransitionsModal from "../../components/modal/modal";
+// import userProfileImg from "../../assets/images/user-profile-img.jpg";
+// import TransitionsModal from "../../components/modal/modal";
 import YourClubs from "../../components/userProfile/yourClubs/yourClubs";
 import { useContext, useEffect, useState } from "react";
 import { useMsal } from "@azure/msal-react";
 import { AuthContext } from "../../contexts/auth-context-provider";
 import { BASE_PATH, ENTRA_SCOPE } from "../../constants/api.constants";
-import HttpVerb from "../../../../clubble-api/src/enums/http-verb.enum";
+import HttpVerb from "../../enums/http-verb.enum";
 import { jwtDecode } from "jwt-decode";
 import {
 	CurrentUser,
 	CurrentUserContext
 } from "../../contexts/current-user-context";
-import { stringAvatar } from "../../helpers/avatar.helpers";
+// import { stringAvatar } from "../../helpers/avatar.helpers";
 import { sleep } from "../../helpers/timeout.helpers";
 
 const UserProfileViewRoute = (): any => {
 	const { instance, accounts } = useMsal();
-	const [accessToken, setAccessToken] = useState();
+	// const [accessToken, setAccessToken] = useState();
 	const authCtx = useContext(AuthContext);
 	const currentUserCtx = useContext(CurrentUserContext);
 

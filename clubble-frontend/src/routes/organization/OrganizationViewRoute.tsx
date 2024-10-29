@@ -7,7 +7,8 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../contexts/auth-context-provider";
 import { BASE_PATH, ENTRA_SCOPE } from "../../constants/api.constants";
 import { useParams } from "react-router-dom";
-import HttpVerb from "../../../../clubble-api/src/enums/http-verb.enum";
+import HttpVerb from "../../enums/http-verb.enum";
+
 
 const OrganizationViewRoute = () => {
 	const authCtx = useContext(AuthContext);

@@ -13,7 +13,7 @@ import {
 	FormLabel,
 	TextField
 } from "@mui/material";
-import SaveIcon from "@mui/icons-material/Save";
+// import SaveIcon from "@mui/icons-material/Save";
 import CancelIcon from "@mui/icons-material/Cancel";
 
 export default function TransitionsModal() {
@@ -95,7 +95,7 @@ export default function TransitionsModal() {
 									</Button>
 									<Button
 										variant="contained"
-										startIcon={<SaveIcon />}
+										// startIcon={<SaveIcon />}
 										type="submit"
 									>
 										Save

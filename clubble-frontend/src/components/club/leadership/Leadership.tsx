@@ -1,4 +1,4 @@
-import { Avatar, Box, Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import LeadershipInfolet from "../leadership-infolet/LeadershipInfolet";
 import { styles } from "./styles";
 

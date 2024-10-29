@@ -3,7 +3,6 @@ import {
 	Button,
 	FormControl,
 	FormHelperText,
-	InputLabel,
 	TextField,
 	Typography
 } from "@mui/material";
@@ -14,7 +13,7 @@ import { styles } from "./styles";
 import { AuthContext } from "../../../contexts/auth-context-provider";
 import { useMsal } from "@azure/msal-react";
 import { BASE_PATH, ENTRA_SCOPE } from "../../../constants/api.constants";
-import HttpVerb from "../../../../../clubble-api/src/enums/http-verb.enum";
+import HttpVerb from "../../../enums/http-verb.enum";
 import {
 	CurrentUser,
 	CurrentUserContext

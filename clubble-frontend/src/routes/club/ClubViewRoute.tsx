@@ -1,16 +1,17 @@
-import { Box, Container, Divider, Tab, Tabs, Typography } from "@mui/material";
+import { Box, Container, Divider, Typography } from "@mui/material";
 import { styles } from "./styles";
 import Banner from "../../components/club/banner/Banner";
-import { SyntheticEvent, useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import TabsUnit from "../../components/shared/tab/TabsUnit";
 import ClubMembers from "../../components/club/members/ClubMembers";
-import QrCodes from "../../components/club/qr-codes/QrCodes";
+// import QrCodes from "../../components/club/qr-codes/QrCodes";
 import Leadership from "../../components/club/leadership/Leadership";
 import { AuthContext } from "../../contexts/auth-context-provider";
 import { BASE_PATH, ENTRA_SCOPE } from "../../constants/api.constants";
-import { CurrentUserContext } from "../../contexts/current-user-context";
-import HttpVerb from "../../../../clubble-api/src/enums/http-verb.enum";
+// import { CurrentUserContext } from "../../contexts/current-user-context";
+// import HttpVerb from "../../../../clubble-api/src/enums/http-verb.enum";
 import { useParams } from "react-router-dom";
+import HttpVerb from "../../enums/http-verb.enum";
 
 type ClubData = {
 	club: {
@@ -32,7 +33,7 @@ const defaultClub: ClubData = {
 
 const ClubViewRoute = () => {
 	const authCtx = useContext(AuthContext);
-	const currentUserContext = useContext(CurrentUserContext);
+	// const currentUserContext = useContext(CurrentUserContext);
 	const [data, setData] = useState<ClubData>(defaultClub);
 
 	const { id } = useParams();
